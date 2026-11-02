@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-primary": "#bcc2ff", "tertiary-container": "#6f4500", "on-background": "#131b2e", "on-secondary-fixed-variant": "#005049", "on-error": "#ffffff", "surface-tint": "#4252c7", "outline-variant": "#c6c5d6", "error": "#ba1a1a", "tertiary-fixed": "#ffddb8", "on-surface-variant": "#454653", "surface-bright": "#faf8ff", "on-secondary-fixed": "#00201d", "secondary-fixed-dim": "#6bd8cb", "tertiary-fixed-dim": "#ffb95f", "inverse-on-surface": "#eef0ff", "surface-container-lowest": "#ffffff", "background": "#faf8ff", "on-tertiary": "#ffffff", "primary": "#11249f", "error-container": "#ffdad6", "surface": "#faf8ff", "on-primary": "#ffffff", "on-primary-container": "#b4bcff", "tertiary": "#503000", "primary-container": "#3040b6", "surface-container": "#eaedff", "on-tertiary-fixed": "#2a1700", "on-secondary-container": "#006f66", "on-tertiary-fixed-variant": "#653e00", "surface-dim": "#d2d9f4", "primary-fixed": "#dfe0ff", "outline": "#757685", "secondary": "#006a61", "on-tertiary-container": "#ffb043", "surface-container-low": "#f2f3ff", "on-surface": "#131b2e", "secondary-fixed": "#89f5e7", "on-primary-fixed-variant": "#2737ae", "primary-fixed-dim": "#bcc2ff", "inverse-surface": "#283044", "surface-container-high": "#e2e7ff", "surface-variant": "#dae2fd", "secondary-container": "#86f2e4", "on-secondary": "#ffffff", "surface-container-highest": "#dae2fd", "on-primary-fixed": "#000b62", "on-error-container": "#93000a" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "0.75rem", "margin": "1rem", "gutter": "1rem", "space-lg": "1rem", "space-sm": "0.5rem", "gutter-tablet": "1.25rem", "margin-desktop": "2rem", "space-xs": "0.25rem", "margin-tablet": "1.5rem", "space-xl": "1.5rem" }, "fontFamily": { "body-md": ["Geist"], "label-md": ["Geist"], "headline-sm": ["Geist"], "headline-lg-mobile": ["Geist"], "body-lg": ["Geist"], "headline-lg": ["Geist"], "body-sm": ["Geist"], "label-lg": ["Geist"], "currency-hero": ["Geist"], "display-lg": ["Geist"], "currency-card": ["Geist"], "headline-md": ["Geist"] }, "fontSize": { "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-sm": ["17px", { "lineHeight": "22px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-lg": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "500" }], "currency-hero": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.03em", "fontWeight": "600" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "600" }], "currency-card": ["20px", { "lineHeight": "24px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.015em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary-container tracking-tight">Tapili</span><span class="h-4 w-px bg-surface-variant mx-0.5"></span><span class="font-label-md text-label-md bg-surface-container-low text-on-surface-variant px-space-sm py-0.5 rounded-full max-w-[130px] truncate">Sparkle & Shine</span></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container-low transition-colors relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin pb-space-xl gap-space-lg">
+<!-- Header Title -->
+<div class="flex items-center justify-between pt-space-sm">
+<div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">Money</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Simple view of your cash and earnings</p>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-high px-space-md py-1.5 rounded-full text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span class="font-label-md text-label-md">Oct 2024</span>
+</div>
+</div>
+<!-- Hero Take-Home Earnings Card -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md">
+<!-- Soft Decorative Sparkle Background -->
+<div class="absolute -right-8 -top-8 w-36 h-36 rounded-full bg-secondary-fixed/40 blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between relative z-10">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-medium">Your Take-Home This Month</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-currency-hero text-currency-hero text-on-surface tracking-tight">£3,240.00</span>
+</div>
+</div>
+<div class="bg-secondary-container text-on-secondary-container px-space-sm py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[15px]">trending_up</span>
+<span class="font-label-md text-label-md font-semibold">88% kept</span>
+</div>
+</div>
+<!-- Plain-English Breakdown Strip -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-xs relative z-10">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">arrow_circle_down</span>
+<span>Earned from cleans</span>
+</div>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">£3,680.00</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-error">arrow_circle_up</span>
+<span>Fuel, cloths & supplies</span>
+</div>
+<span class="font-label-lg text-label-lg text-error font-medium">-£440.00</span>
+</div>
+<div class="h-px bg-surface-variant my-1"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">In your pocket</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">Net Profit: £3,240.00</span>
+</div>
+</div>
+<!-- Micro Visual Gauge -->
+<div class="flex flex-col gap-1.5 relative z-10">
+<div class="flex justify-between items-center font-label-md text-label-md text-on-surface-variant">
+<span>Cleaned 48 homes</span>
+<span>Avg £76 / booking</span>
+</div>
+<div class="w-full bg-surface-variant h-2 rounded-full overflow-hidden flex">
+<div class="bg-secondary-fixed-variant h-full rounded-full" style="width: 88%"></div>
+<div class="bg-tertiary-fixed-dim h-full" style="width: 12%"></div>
+</div>
+</div>
+</div>
+<!-- Primary Quick Actions Strip -->
+<div class="grid grid-cols-2 gap-space-md">
+<button class="h-12 px-space-md bg-primary-container text-on-primary rounded-xl flex items-center justify-center gap-space-xs shadow-sm hover:opacity-95 active:scale-[0.98] transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span class="font-label-lg text-label-lg font-medium tracking-tight">Create Invoice</span>
+</button>
+<button class="h-12 px-space-md bg-surface-container-lowest text-on-surface rounded-xl flex items-center justify-center gap-space-xs shadow-sm active:bg-surface-container-low transition-all" type="button">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">receipt_long</span>
+<span class="font-label-lg text-label-lg font-medium tracking-tight">Log Expense</span>
+</button>
+</div>
+<!-- Urgent Action Section: Who Owes You -->
+<div class="flex flex-col gap-space-md mt-space-xs">
+<!-- Attention Banner -->
+<div class="bg-tertiary-fixed text-on-tertiary-fixed p-space-md rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-tertiary-fixed-dim/60 flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[20px]">notification_important</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm font-semibold tracking-tight text-on-tertiary-fixed">Who Owes You</h2>
+<p class="font-body-sm text-body-sm text-on-tertiary-fixed-variant">£380.00 unpaid across 3 clients</p>
+</div>
+</div>
+<span class="font-currency-card text-currency-card font-bold tracking-tight text-on-tertiary-fixed">£380</span>
+</div>
+<!-- Client Debt Cards Stack -->
+<div class="flex flex-col gap-space-md" id="unpaid-cards-container">
+<!-- Card 1: Marcus Holloway -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md transition-all" id="card-marcus">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-md">
+<div class="relative w-11 h-11 rounded-full overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of middle-aged man Marcus Holloway smiling gently outdoors in morning natural light with soft neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcx7LsFBCzqPFxiuIDtiKkCjDtyaOukmCk8XBqIwc4vpGeuAtzL-yOsVKeFYn3ShHmrXuEl181H8aU5reVKSifsOCTPlqoA-aBRX4ocYTScfGRGKzAUVMOo2VJU9y0FT8ehcGBPkerCMypyBXGlBJ60TVFzg8O8mFlqoZfJXIrtKHt7EDOk_yexyXhcjhwGVX3NqSNtWw_36rqOBOekPMvsQ5htVV5duI9Kf6nYsU"/>
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Marcus Holloway</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Deep Clean • Inv #104 (12 Oct)</p>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-currency-card text-currency-card text-on-surface">£140.00</span>
+<div class="mt-0.5">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-md text-label-md bg-error-container text-on-error-container font-medium">7 days overdue</span>
+</div>
+</div>
+</div>
+<!-- 1-Tap SMS Action -->
+<button class="w-full h-11 bg-primary-container text-on-primary rounded-lg flex items-center justify-center gap-space-xs font-label-lg text-label-lg font-medium shadow-sm active:bg-primary transition-colors" onclick="handleSendReminder('card-marcus', 'SMS sent to Marcus')" type="button">
+<span class="material-symbols-outlined text-[18px]">sms</span>
+<span>Send 1-Tap SMS Reminder</span>
+</button>
+</div>
+<!-- Card 2: Julian Thorne -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md transition-all" id="card-julian">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-md">
+<div class="relative w-11 h-11 rounded-full overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Warm natural headshot portrait of customer Julian Thorne in a tidy modern kitchen setting with clean daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU4shFSPMq8S7vLW-KzZJ8RV3uXLKOT440v4rLXoKkN2sviU6Bu67MHzTpLBr0slsnjABybi0nf6lCG2Erpmb4iLkDNID3OUBfM1INYXfi1sLpBEWRY9LWJYLxQMBVqdXgO2ywu9mAkpU2a6B7BrYFdj0Q2PoKBg8MfRO-U23zqIYejZSERwtNTEkxS1eXpGUTDV8XIx1mC9pm2lr7xWopp-dRer74qdUQ80ShEKA"/>
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Julian Thorne</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Fortnightly Clean • Inv #105 (18 Oct)</p>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-currency-card text-currency-card text-on-surface">£180.00</span>
+<div class="mt-0.5">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-md text-label-md bg-error-container text-on-error-container font-medium">3 days overdue</span>
+</div>
+</div>
+</div>
+<!-- WhatsApp Link Action -->
+<button class="w-full h-11 bg-secondary text-on-secondary rounded-lg flex items-center justify-center gap-space-xs font-label-lg text-label-lg font-medium shadow-sm active:opacity-90 transition-opacity" onclick="handleSendReminder('card-julian', 'WhatsApp opened for Julian')" type="button">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Send WhatsApp Link</span>
+</button>
+</div>
+<!-- Card 3: Eleanor Vance -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md transition-all" id="card-eleanor">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-md">
+<div class="relative w-11 h-11 rounded-full overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of Eleanor Vance standing by a bright sunlit window in a contemporary home interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHYyEbBONmHc_2inT6mDCGOI4n5j_qtKnc1HcxmZc2xQzvP4F3oF8zhZQkZarqT9GZ1M6OgTuj3L_QRk2I5S_IRfuYfvYHzlNU2JKJ5pOh2aPmOmCQEz7AHz0FvUY_pxhMB7tKD16dmKV25xWsa1yENyB6fiq5wDhxllqtMokKu718elxXvxHDkRU7FPf_N1f02WKCpZwbHrcHd9eLQT-4pNyS2kZltlO8gt1W2Dk"/>
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Eleanor Vance</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Standard Tidy • Inv #106 (Today)</p>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-currency-card text-currency-card text-on-surface">£60.00</span>
+<div class="mt-0.5">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface-variant font-medium">Due today</span>
+</div>
+</div>
+</div>
+<!-- Mark as Paid Action -->
+<button class="w-full h-11 bg-surface-container text-primary-container rounded-lg flex items-center justify-center gap-space-xs font-label-lg text-label-lg font-medium active:bg-surface-variant transition-colors" onclick="handleMarkPaid('card-eleanor', 'Eleanor Vance marked paid')" type="button">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Mark as Paid</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Recent Activity Strip -->
+<div class="flex flex-col gap-space-md mt-space-xs">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm font-semibold text-on-surface tracking-tight">Recent Cash In & Out</h2>
+<span class="font-label-md text-label-md text-primary-container font-medium">View all</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<!-- Item 1: Inflow -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-full bg-secondary-container/70 text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">south_west</span>
+</div>
+<div class="min-w-0">
+<h4 class="font-label-lg text-label-lg font-semibold text-on-surface truncate">Charlotte Davies</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Bank Transfer • Today, 11:20</p>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-lg text-label-lg font-semibold text-secondary">+£65.00</span>
+<p class="font-label-md text-label-md text-on-surface-variant">Cleared</p>
+</div>
+</div>
+<div class="h-px bg-surface-container-low"></div>
+<!-- Item 2: Outflow -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">north_east</span>
+</div>
+<div class="min-w-0">
+<h4 class="font-label-lg text-label-lg font-semibold text-on-surface truncate">Screwfix</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Microfibres & spray bottles • Yesterday</p>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">-£24.50</span>
+<p class="font-label-md text-label-md text-on-surface-variant">Supplies</p>
+</div>
+</div>
+<div class="h-px bg-surface-container-low"></div>
+<!-- Item 3: Inflow -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-full bg-secondary-container/70 text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">south_west</span>
+</div>
+<div class="min-w-0">
+<h4 class="font-label-lg text-label-lg font-semibold text-on-surface truncate">Oliver Sterling</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Card Payment • Yesterday, 16:45</p>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-lg text-label-lg font-semibold text-secondary">+£120.00</span>
+<p class="font-label-md text-label-md text-on-surface-variant">Cleared</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Toast Notification Feedback Area -->
+<div class="fixed bottom-20 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface px-space-lg py-2 rounded-full shadow-lg font-label-md text-label-md flex items-center gap-2 pointer-events-none opacity-0 transition-opacity duration-300 z-50" id="toast-pill">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">check_circle</span>
+<span id="toast-text">Action completed</span>
+</div>
+</div>
+<script>
+  function showToast(message) {
+    const toast = document.getElementById('toast-pill');
+    const toastText = document.getElementById('toast-text');
+    if (!toast || !toastText) return;
+    toastText.textContent = message;
+    toast.classList.remove('opacity-0');
+    toast.classList.add('opacity-100');
+    setTimeout(() => {
+      toast.classList.remove('opacity-100');
+      toast.classList.add('opacity-0');
+    }, 2400);
+  }
+
+  function handleSendReminder(cardId, message) {
+    const card = document.getElementById(cardId);
+    if (card) {
+      card.classList.add('bg-surface-container-low');
+      const btn = card.querySelector('button');
+      if (btn) {
+        btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">done_all</span><span>Reminder Sent</span>';
+        btn.classList.remove('bg-primary-container', 'bg-secondary');
+        btn.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+      }
+    }
+    showToast(message);
+  }
+
+  function handleMarkPaid(cardId, message) {
+    const card = document.getElementById(cardId);
+    if (card) {
+      card.style.transform = 'scale(0.96)';
+      card.style.opacity = '0.5';
+      setTimeout(() => {
+        card.style.display = 'none';
+      }, 250);
+    }
+    showToast(message);
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.03)]" data-active-classes="text-primary-container font-semibold"><div class="h-16 px-space-xs grid grid-cols-5 items-center"><a class="flex flex-col items-center justify-center h-full text-outline hover:text-on-surface transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-md text-[11px] leading-tight mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center h-full text-outline hover:text-on-surface transition-colors" data-path="jobs" href="#"><span class="material-symbols-outlined text-[24px]">event_available</span><span class="font-label-md text-[11px] leading-tight mt-0.5">Jobs</span></a><a class="flex flex-col items-center justify-center h-full text-outline hover:text-on-surface transition-colors" data-path="customers" href="#"><span class="material-symbols-outlined text-[24px]">group</span><span class="font-label-md text-[11px] leading-tight mt-0.5">Customers</span></a><a aria-current="page" class="flex flex-col items-center justify-center h-full transition-colors text-primary-container font-semibold" data-path="money" href="#"><span class="material-symbols-outlined text-[24px]">account_balance_wallet</span><span class="font-label-md text-[11px] leading-tight mt-0.5">Money</span></a><a class="flex flex-col items-center justify-center h-full text-outline hover:text-on-surface transition-colors" data-path="more" href="#"><span class="material-symbols-outlined text-[24px]">more_horiz</span><span class="font-label-md text-[11px] leading-tight mt-0.5">More</span></a></div></nav></body></html>

@@ -1,0 +1,6 @@
+{
+  "name": "Tapili - Cleaner Operating System",
+  "description": "The operating system for independent cleaners and cleaning businesses in the UK. Manage rounds, key safe codes, instant booking links, 1-tap WhatsApp invoicing, Stripe deposits, and cash expenses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

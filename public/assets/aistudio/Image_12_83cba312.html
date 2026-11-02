@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-primary": "#bcc2ff", "tertiary-container": "#6f4500", "on-background": "#131b2e", "on-secondary-fixed-variant": "#005049", "on-error": "#ffffff", "surface-tint": "#4252c7", "outline-variant": "#c6c5d6", "error": "#ba1a1a", "tertiary-fixed": "#ffddb8", "on-surface-variant": "#454653", "surface-bright": "#faf8ff", "on-secondary-fixed": "#00201d", "secondary-fixed-dim": "#6bd8cb", "tertiary-fixed-dim": "#ffb95f", "inverse-on-surface": "#eef0ff", "surface-container-lowest": "#ffffff", "background": "#faf8ff", "on-tertiary": "#ffffff", "primary": "#11249f", "error-container": "#ffdad6", "surface": "#faf8ff", "on-primary": "#ffffff", "on-primary-container": "#b4bcff", "tertiary": "#503000", "primary-container": "#3040b6", "surface-container": "#eaedff", "on-tertiary-fixed": "#2a1700", "on-secondary-container": "#006f66", "on-tertiary-fixed-variant": "#653e00", "surface-dim": "#d2d9f4", "primary-fixed": "#dfe0ff", "outline": "#757685", "secondary": "#006a61", "on-tertiary-container": "#ffb043", "surface-container-low": "#f2f3ff", "on-surface": "#131b2e", "secondary-fixed": "#89f5e7", "on-primary-fixed-variant": "#2737ae", "primary-fixed-dim": "#bcc2ff", "inverse-surface": "#283044", "surface-container-high": "#e2e7ff", "surface-variant": "#dae2fd", "secondary-container": "#86f2e4", "on-secondary": "#ffffff", "surface-container-highest": "#dae2fd", "on-primary-fixed": "#000b62", "on-error-container": "#93000a" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "0.75rem", "margin": "1rem", "gutter": "1rem", "space-lg": "1rem", "space-sm": "0.5rem", "gutter-tablet": "1.25rem", "margin-desktop": "2rem", "space-xs": "0.25rem", "margin-tablet": "1.5rem", "space-xl": "1.5rem" }, "fontFamily": { "body-md": ["Geist"], "label-md": ["Geist"], "headline-sm": ["Geist"], "headline-lg-mobile": ["Geist"], "body-lg": ["Geist"], "headline-lg": ["Geist"], "body-sm": ["Geist"], "label-lg": ["Geist"], "currency-hero": ["Geist"], "display-lg": ["Geist"], "currency-card": ["Geist"], "headline-md": ["Geist"] }, "fontSize": { "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-sm": ["17px", { "lineHeight": "22px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-lg": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "500" }], "currency-hero": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.03em", "fontWeight": "600" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "600" }], "currency-card": ["20px", { "lineHeight": "24px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.015em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary-container tracking-tight">Tapili</span><span class="h-4 w-px bg-surface-variant mx-0.5"></span><span class="font-label-md text-label-md bg-surface-container-low text-on-surface-variant px-space-sm py-0.5 rounded-full max-w-[130px] truncate">Sparkle &amp; Shine</span></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container-low transition-colors relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-28">
+<!-- Top Navigation Bar -->
+<div class="px-margin pt-space-md pb-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<button aria-label="Back to Jobs" class="w-10 h-10 -ml-1 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-low active:bg-surface-dim transition-colors" type="button">
+<span class="material-symbols-outlined text-[24px]">arrow_back</span>
+</button>
+<div>
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight">New Job</h1>
+<p class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          Quick 30s booking
+        </p>
+</div>
+</div>
+<div class="bg-surface-container-high px-2.5 py-1 rounded-full flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary-container" style="font-variation-settings: 'FILL' 1;">timer</span>
+<span class="font-label-md text-label-md text-primary-container font-semibold">Fast Track</span>
+</div>
+</div>
+<form class="px-margin flex flex-col gap-space-md mt-space-xs" id="new-job-form" onsubmit="event.preventDefault();">
+<!-- 1. Customer Selector Block -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary-container">person</span>
+          Select Customer
+        </label>
+<span class="font-label-md text-label-md text-on-surface-variant">Step 1 of 5</span>
+</div>
+<!-- Quick Select Pills -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 -mx-1 px-1">
+<button class="cust-pill active flex items-center gap-2 px-3 py-2 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shrink-0 shadow-sm transition-all" id="cust-charlotte" onclick="selectCustomer('charlotte')" type="button">
+<span class="w-5 h-5 rounded-full bg-surface-container-lowest/20 flex items-center justify-center text-[11px] font-bold">CD</span>
+<span>Charlotte Davies</span>
+<span class="material-symbols-outlined text-[14px]">check</span>
+</button>
+<button class="cust-pill flex items-center gap-2 px-3 py-2 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md shrink-0 hover:bg-surface-container transition-all" id="cust-oliver" onclick="selectCustomer('oliver')" type="button">
+<span class="w-5 h-5 rounded-full bg-surface-dim flex items-center justify-center text-[11px] font-bold text-on-surface-variant">OS</span>
+<span>Oliver Sterling</span>
+</button>
+<button class="flex items-center gap-1 px-3 py-2 rounded-full bg-surface-container-low text-primary-container font-label-md text-label-md shrink-0 hover:bg-surface-container transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Add New</span>
+</button>
+</div>
+<!-- Verified badge micro-delight -->
+<div class="flex items-center justify-between bg-surface-container-low px-3 py-2 rounded-lg text-on-surface-variant">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified</span>
+<p class="font-body-sm text-body-sm truncate" id="customer-phone">+44 7911 204918 · Key Holder</p>
+</div>
+<span class="font-label-md text-label-md text-secondary font-semibold shrink-0">Regular Client</span>
+</div>
+</div>
+<!-- 2. Service Type -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary-container">cleaning_services</span>
+          Service Category
+        </label>
+<span class="font-label-md text-label-md text-on-surface-variant">Standard Rate</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm" id="service-grid">
+<button class="service-chip active p-3 rounded-lg bg-surface-container-high text-left flex flex-col justify-between h-20 transition-all" onclick="selectService(this, 'regular', 75.00)" type="button">
+<div class="flex items-start justify-between w-full">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Regular Clean</span>
+<span class="material-symbols-outlined text-[18px] text-primary-container">check_circle</span>
+</div>
+<span class="font-label-md text-label-md text-primary-container font-medium">£18–£22 / hr</span>
+</button>
+<button class="service-chip p-3 rounded-lg bg-surface-container-low text-left flex flex-col justify-between h-20 hover:bg-surface-container transition-all" onclick="selectService(this, 'deep', 120.00)" type="button">
+<div class="flex items-start justify-between w-full">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Deep Clean</span>
+<span class="material-symbols-outlined text-[18px] text-outline opacity-0">check_circle</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">From £120+</span>
+</button>
+<button class="service-chip p-3 rounded-lg bg-surface-container-low text-left flex flex-col justify-between h-20 hover:bg-surface-container transition-all" onclick="selectService(this, 'tenancy', 165.00)" type="button">
+<div class="flex items-start justify-between w-full">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">End of Tenancy</span>
+<span class="material-symbols-outlined text-[18px] text-outline opacity-0">check_circle</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Full Inventory</span>
+</button>
+<button class="service-chip p-3 rounded-lg bg-surface-container-low text-left flex flex-col justify-between h-20 hover:bg-surface-container transition-all" onclick="selectService(this, 'oven_carpet', 45.00)" type="button">
+<div class="flex items-start justify-between w-full">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Oven &amp; Carpet</span>
+<span class="material-symbols-outlined text-[18px] text-outline opacity-0">check_circle</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Specialist Add-on</span>
+</button>
+</div>
+</div>
+<!-- 3. Property Address (Auto-populated with tactile edit) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary-container">location_on</span>
+          Job Address
+        </label>
+<button class="font-label-md text-label-md text-primary-container font-medium hover:underline flex items-center gap-0.5" onclick="toggleAddressEdit()" type="button">
+<span class="material-symbols-outlined text-[14px]">edit</span>
+<span id="address-edit-label">Change</span>
+</button>
+</div>
+<div class="bg-surface-container-low rounded-lg p-3 flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">home</span>
+</div>
+<div class="min-w-0 flex-1">
+<div id="address-view">
+<p class="font-body-md text-body-md text-on-surface font-medium" id="property-address-line1">14 Richmond Crescent, Flat 2B</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="property-address-line2">Islington, London N1 0TR</p>
+</div>
+<input class="hidden w-full h-10 px-2 rounded bg-surface-container-lowest font-body-sm text-body-sm text-on-surface outline-none focus:bg-surface-container-high transition-colors" id="address-input" type="text" value="14 Richmond Crescent, Flat 2B, London N1 0TR"/>
+</div>
+<button aria-label="Open maps preview" class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-primary-container shrink-0" type="button">
+<span class="material-symbols-outlined text-[16px]">map</span>
+</button>
+</div>
+</div>
+<!-- 4. Schedule & Time Slot -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary-container">calendar_month</span>
+        Schedule &amp; Arrival Window
+      </label>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Date Selector Card -->
+<div class="bg-surface-container-low rounded-lg p-3 flex flex-col justify-between h-20 relative cursor-pointer hover:bg-surface-container transition-colors">
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">today</span> Date
+          </span>
+<div class="flex items-baseline justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Tomorrow</span>
+<span class="font-label-md text-label-md text-primary-container font-semibold">25 Oct</span>
+</div>
+<input class="absolute inset-0 opacity-0 cursor-pointer w-full h-full" onchange="updateDateDisplay(this)" type="date" value="2024-10-25"/>
+</div>
+<!-- Time Window Card -->
+<div class="bg-surface-container-low rounded-lg p-3 flex flex-col justify-between h-20 relative cursor-pointer hover:bg-surface-container transition-colors">
+<span class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> Window
+          </span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-semibold leading-tight">09:30 – 12:30</span>
+<span class="font-label-md text-label-md text-secondary font-medium">3 hrs slot</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 5. Pricing & Automated Balance -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary-container">payments</span>
+          Pricing &amp; Deposit
+        </label>
+<span class="font-label-md text-label-md text-on-surface-variant">GBP (£)</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Agreed Price Input -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-md text-label-md text-on-surface-variant">Agreed Total</span>
+<div class="h-12 rounded-xl bg-surface-container-low px-3 flex items-center gap-1.5 focus-within:bg-surface-container-high transition-colors">
+<span class="font-headline-sm text-headline-sm text-on-surface-variant select-none">£</span>
+<input class="w-full bg-transparent font-headline-sm text-headline-sm text-on-surface outline-none tabular-nums" id="input-agreed" oninput="calculateBalance()" step="0.50" type="number" value="75.00"/>
+</div>
+</div>
+<!-- Deposit Paid Input -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-md text-label-md text-on-surface-variant">Deposit Collected</span>
+<div class="h-12 rounded-xl bg-surface-container-low px-3 flex items-center gap-1.5 focus-within:bg-surface-container-high transition-colors">
+<span class="font-headline-sm text-headline-sm text-on-surface-variant select-none">£</span>
+<input class="w-full bg-transparent font-headline-sm text-headline-sm text-on-surface outline-none tabular-nums" id="input-deposit" oninput="calculateBalance()" step="0.50" type="number" value="20.00"/>
+</div>
+</div>
+</div>
+<!-- Automated Remaining Balance Banner -->
+<div class="bg-surface-container-high rounded-xl p-3.5 flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[20px]">account_balance_wallet</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface-variant leading-none">Remaining Balance</p>
+<p class="font-body-sm text-body-sm text-secondary font-medium mt-0.5">Due upon completion</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-currency-hero text-headline-lg-mobile text-primary-container font-semibold tracking-tight" id="balance-display">£55.00</span>
+</div>
+</div>
+</div>
+<!-- 6. Access & Checklist (Expandable Accordion) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all">
+<button class="w-full p-space-lg flex items-center justify-between text-left hover:bg-surface-container-low/50 transition-colors" onclick="toggleAccordion()" type="button">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary-container">vpn_key</span>
+<div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold block">Key Lockbox &amp; Checklist</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Code #4920 · 4 checklist items ready</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline transition-transform duration-200" id="accordion-icon">expand_more</span>
+</button>
+<div class="hidden px-space-lg pb-space-lg flex flex-col gap-space-md" id="accordion-content">
+<!-- Lockbox Instructions -->
+<div class="bg-surface-container-low p-3 rounded-lg flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-tertiary-container mt-0.5">key</span>
+<div class="flex-1">
+<p class="font-label-md text-label-md text-on-surface font-semibold">Front Porch Lockbox</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Code: <strong class="text-on-surface font-mono">4920</strong> · Return key inside lockbox upon job completion.</p>
+</div>
+</div>
+<!-- 4 Essential Checklist Items -->
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Standard Kitchen &amp; Bath Scope</span>
+<label class="flex items-center gap-3 p-2 rounded-lg bg-surface-container-low cursor-pointer">
+<input checked="" class="w-5 h-5 rounded accent-primary-container cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Kitchen surfaces &amp; hob descaling</span>
+</label>
+<label class="flex items-center gap-3 p-2 rounded-lg bg-surface-container-low cursor-pointer">
+<input checked="" class="w-5 h-5 rounded accent-primary-container cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Sanitise 2 bathrooms &amp; mirrors</span>
+</label>
+<label class="flex items-center gap-3 p-2 rounded-lg bg-surface-container-low cursor-pointer">
+<input checked="" class="w-5 h-5 rounded accent-primary-container cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Vacuum &amp; steam mop all hardwood floors</span>
+</label>
+<label class="flex items-center gap-3 p-2 rounded-lg bg-surface-container-low cursor-pointer">
+<input checked="" class="w-5 h-5 rounded accent-primary-container cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Empty waste bins &amp; replace bin liners</span>
+</label>
+</div>
+</div>
+</div>
+</form>
+<!-- Sticky Bottom CTA (Reservoirs safe-area touch clearance) -->
+<div class="fixed bottom-16 left-0 right-0 p-margin bg-surface-container-lowest/90 backdrop-blur-md shadow-lg z-40">
+<div class="max-w-[420px] mx-auto flex items-center gap-3">
+<button aria-label="Save draft" class="h-12 w-12 rounded-xl bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors shrink-0" onclick="handleQuickDraft()" type="button">
+<span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+</button>
+<button class="h-12 flex-1 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 shadow-md hover:bg-primary active:scale-[0.98] transition-all" onclick="submitBooking()" type="button">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+<span>Confirm &amp; Book Job</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Customer Switch logic
+  const customers = {
+    charlotte: {
+      name: 'Charlotte Davies',
+      phone: '+44 7911 204918 · Key Holder',
+      type: 'Regular Client',
+      line1: '14 Richmond Crescent, Flat 2B',
+      line2: 'Islington, London N1 0TR'
+    },
+    oliver: {
+      name: 'Oliver Sterling',
+      phone: '+44 7820 994112 · Ring Bell',
+      type: 'Fortnightly Client',
+      line1: '88 Kensington Park Road',
+      line2: 'Notting Hill, London W11 2ES'
+    }
+  };
+
+  function selectCustomer(id) {
+    const data = customers[id];
+    if (!data) return;
+
+    // Update Pills
+    document.querySelectorAll('.cust-pill').forEach(btn => {
+      btn.classList.remove('active', 'bg-primary-container', 'text-on-primary', 'shadow-sm');
+      btn.classList.add('bg-surface-container-low', 'text-on-surface');
+      const check = btn.querySelector('.material-symbols-outlined');
+      if (check) check.remove();
+    });
+
+    const activeBtn = document.getElementById('cust-' + id);
+    if (activeBtn) {
+      activeBtn.classList.add('active', 'bg-primary-container', 'text-on-primary', 'shadow-sm');
+      activeBtn.classList.remove('bg-surface-container-low', 'text-on-surface');
+      const checkIcon = document.createElement('span');
+      checkIcon.className = 'material-symbols-outlined text-[14px]';
+      checkIcon.innerText = 'check';
+      activeBtn.appendChild(checkIcon);
+    }
+
+    // Populate Address & Phone
+    document.getElementById('customer-phone').innerText = data.phone;
+    document.getElementById('property-address-line1').innerText = data.line1;
+    document.getElementById('property-address-line2').innerText = data.line2;
+    document.getElementById('address-input').value = data.line1 + ', ' + data.line2;
+  }
+
+  // Service Selector
+  function selectService(el, type, defaultPrice) {
+    document.querySelectorAll('.service-chip').forEach(chip => {
+      chip.classList.remove('active', 'bg-surface-container-high');
+      chip.classList.add('bg-surface-container-low');
+      const icon = chip.querySelector('.material-symbols-outlined');
+      if (icon) {
+        icon.classList.add('opacity-0', 'text-outline');
+        icon.classList.remove('text-primary-container');
+      }
+    });
+
+    el.classList.add('active', 'bg-surface-container-high');
+    el.classList.remove('bg-surface-container-low');
+    const activeIcon = el.querySelector('.material-symbols-outlined');
+    if (activeIcon) {
+      activeIcon.classList.remove('opacity-0', 'text-outline');
+      activeIcon.classList.add('text-primary-container');
+    }
+
+    if (defaultPrice) {
+      document.getElementById('input-agreed').value = defaultPrice.toFixed(2);
+      calculateBalance();
+    }
+  }
+
+  // Quick Address Inline Toggle
+  function toggleAddressEdit() {
+    const view = document.getElementById('address-view');
+    const input = document.getElementById('address-input');
+    const label = document.getElementById('address-edit-label');
+
+    if (input.classList.contains('hidden')) {
+      input.classList.remove('hidden');
+      view.classList.add('hidden');
+      input.focus();
+      label.innerText = 'Done';
+    } else {
+      input.classList.add('hidden');
+      view.classList.remove('hidden');
+      const parts = input.value.split(',');
+      if (parts.length > 1) {
+        document.getElementById('property-address-line1').innerText = parts[0].trim();
+        document.getElementById('property-address-line2').innerText = parts.slice(1).join(',').trim();
+      } else {
+        document.getElementById('property-address-line1').innerText = input.value;
+      }
+      label.innerText = 'Change';
+    }
+  }
+
+  // Balance Calculation
+  function calculateBalance() {
+    const agreed = parseFloat(document.getElementById('input-agreed').value) || 0;
+    const deposit = parseFloat(document.getElementById('input-deposit').value) || 0;
+    const balance = Math.max(0, agreed - deposit);
+    document.getElementById('balance-display').innerText = '£' + balance.toFixed(2);
+  }
+
+  // Accordion Toggle
+  function toggleAccordion() {
+    const content = document.getElementById('accordion-content');
+    const icon = document.getElementById('accordion-icon');
+    if (content.classList.contains('hidden')) {
+      content.classList.remove('hidden');
+      icon.style.transform = 'rotate(180deg)';
+    } else {
+      content.classList.add('hidden');
+      icon.style.transform = 'rotate(0deg)';
+    }
+  }
+
+  // Submit Feedback Micro-interaction
+  function submitBooking() {
+    const btn = event.currentTarget;
+    const originalContent = btn.innerHTML;
+    btn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[20px]">autorenew</span><span>Booking Job...</span>';
+    btn.disabled = true;
+
+    setTimeout(() => {
+      btn.innerHTML = '<span class="material-symbols-outlined text-[20px]">check</span><span>Confirmed!</span>';
+      btn.classList.add('bg-secondary');
+      setTimeout(() => {
+        btn.innerHTML = originalContent;
+        btn.classList.remove('bg-secondary');
+        btn.disabled = false;
+      }, 2000);
+    }, 700);
+  }
+
+  function handleQuickDraft() {
+    alert('Booking saved as draft.');
+  }
+
+  function updateDateDisplay(el) {
+    // Micro placeholder logic for native date selection
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.03)]" data-active-classes="text-primary-container font-semibold"><div class="h-16 px-space-xs grid grid-cols-5 items-center"><a class="flex flex-col items-center justify-center h-full text-outline hover:text-on-surface transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-md text-[11px] leading-tight mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center h-full text-outline hover:text-on-surface transition-colors" data-path="jobs" href="#"><span class="material-symbols-outlined text-[24px]">event_available</span><span class="font-label-md text-[11px] leading-tight mt-0.5">Jobs</span></a><a class="flex flex-col items-center justify-center h-full text-outline hover:text-on-surface transition-colors" data-path="customers" href="#"><span class="material-symbols-outlined text-[24px]">group</span><span class="font-label-md text-[11px] leading-tight mt-0.5">Customers</span></a><a class="flex flex-col items-center justify-center h-full text-outline hover:text-on-surface transition-colors" data-path="money" href="#"><span class="material-symbols-outlined text-[24px]">account_balance_wallet</span><span class="font-label-md text-[11px] leading-tight mt-0.5">Money</span></a><a class="flex flex-col items-center justify-center h-full text-outline hover:text-on-surface transition-colors" data-path="more" href="#"><span class="material-symbols-outlined text-[24px]">more_horiz</span><span class="font-label-md text-[11px] leading-tight mt-0.5">More</span></a></div></nav></body></html>
